@@ -1,11 +1,11 @@
 # Mad Property Pal
 
-A app to store property information and can be used to buying and lending
+An app to store property information and can be used to buying and lending
 
 ## Description
 This is an app which was created using Android Studio for property lenders and buyers. 
 <br>
-The app can store multiple properties and has multiple fields such as the property name, value, size, ect. The properties also can be updated or deleted. Furthermore, the properties have offer prices, viewing date and expiry date for end clients.
+The app can store multiple properties and has multiple fields such as the property name, value, size, etc. The properties also can be updated or deleted. Furthermore, the properties have offer prices, viewing date and expiry date for end clients.
 
 ## Authors
 
