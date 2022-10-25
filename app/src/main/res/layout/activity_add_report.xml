@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddReportActivity">
+
+    <EditText
+        android:id="@+id/rdate"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:hint="Viewing Date – Required"
+        android:imeOptions="actionNext"
+        android:maxLength="30" />
+
+    <Spinner
+        android:id="@+id/rinterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"
+        />
+
+    <EditText
+        android:id="@+id/rprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Offer Price – Optional" />
+
+    <EditText
+        android:id="@+id/rexpiry"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:hint="Expiry Date – Optional"
+        android:imeOptions="actionNext"
+        android:maxLength="30" />
+
+    <EditText
+        android:id="@+id/rconditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Conditions of Offer – Optional"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/rcomments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comments – Optional"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:scrollbars="vertical"
+        />
+
+    <LinearLayout
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/radd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Report Database"
+        android:onClick="btn_add"
+        android:layout_margin="7dp"
+        android:layout_weight="2"/>
+    </LinearLayout>
+
+
+</LinearLayout>

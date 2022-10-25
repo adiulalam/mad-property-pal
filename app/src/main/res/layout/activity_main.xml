@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    //Name
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Property Name and Number – Required" />
+
+    //property type
+    <Spinner
+        android:id="@+id/protype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"
+        />
+
+    <Spinner
+        android:id="@+id/leasetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"/>
+
+    <Spinner
+        android:id="@+id/bednum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"/>
+
+    <Spinner
+        android:id="@+id/bathnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dialog"/>
+
+    <EditText
+        android:id="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Property Size (Meter Squared) – Required" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Property Asking Price (£) – Required" />
+
+    <RadioGroup
+        android:id="@+id/radiogarden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garden? (Required)"/>
+
+        <RadioButton
+            android:id="@+id/radiogardenyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radiogardenno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiodrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driveway? (Required)"/>
+
+        <RadioButton
+            android:id="@+id/radiodriveyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES" />
+
+        <RadioButton
+            android:id="@+id/radiodriveno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Local Amenities – Optional"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description – Optional"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:scrollbars="vertical"
+        />
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to database"
+        android:onClick="btn_add"
+        android:layout_weight="2"/>
+    <Button
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="List Database"
+        android:onClick="btn_list"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/deleteall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="DELETE ALL DATA"
+        android:onClick="btn_deleteall"/>
+
+        <Button
+            android:id="@+id/json"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Test JSON"
+            android:onClick="btn_json"/>
+    </LinearLayout>
+
+</LinearLayout>
